@@ -11,7 +11,6 @@ format:
     slide-number: true
     show-slide-number: all
     footer: "njtierney.github.io/gentle-intro-targets/slides"
-editor: visual
 execute: 
   echo: false
   warning: false
@@ -81,31 +80,38 @@ nipa <- list(red = "#c03018",
 
 # I have three goals
 
-1. Convince you {targets} is **worth** learning
-2. Convince you that you **can** use it
-3. For you to feel **more confident** writing functions
+1.  Convince you {targets} is **worth** learning
+2.  Convince you that you **can** use it
+3.  For you to feel **more confident** writing functions
+
+# Data analysis in question
+
+- Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
+- Let's use penguins data
+- Let's build a logistic regression, predicting sex
 
 # Questions to audience
 
-- What problems might come up in this data analysis?
-- What should we do from here?
-- Problems with putting this into a quarto/rmd document
+-   What problems might come up in this data analysis?
+-   What should we do from here?
+-   Problems with putting this into a quarto/rmd document
 
 # Some key tooling to demonstrate
 
-- Functions with fnmate
-- Writing from top down
-- How to load individual targets
-  - Using keyboard shortcuts
-- How to load packages/dependencies
-- How to debug errors in targets
-- Using tflow
-- Using tar_load
-- storing data
+-   Functions with fnmate
+-   Writing from top down
+-   How to load individual targets
+    -   Using keyboard shortcuts
+-   How to load packages/dependencies
+-   How to debug errors in targets
+-   Using tflow
+-   Using tar_load
+-   storing data
 
 # Take homes
 
 # Thanks
+
 -   Will Landau
 -   Miles McBain
 -   Nick Golding
