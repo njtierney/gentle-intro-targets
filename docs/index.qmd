@@ -1,7 +1,7 @@
 ---
-title: "A gentle guide to using the {targets} package for analytic pipelines"
+title: "A gentle guide to using the `{targets}` package for analytic pipelines"
 subtitle: "Newcastle, UK"
-date: "3rd September, 2024"
+date: "2024/09/03"
 author: "Nicholas Tierney"
 institute: The Kids Institute, Australia
 format: 
@@ -77,17 +77,23 @@ nipa <- list(red = "#c03018",
 
 ```
 
-# I have three goals
+# Motivation
+
+- Data analysis is interactive/messy
+- How to know if it is up-to-date? Better re-run...
+- Months later, how did you do things? Better re-run...
+- Thinking about data analysis deserves inherent structure
+- **You are always collaborating with your future self**
+- {targets} is a way to manage complexity
+  - It's also a mindset, a philosophy.
+
+
+# I have 3 goals
 
 1.  Convince you {targets} is **worth** learning
 2.  Convince you that you **can** use it
 3.  For you to feel **more confident** writing functions
 
-# Data analysis in question
-
-- Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
-- Let's use penguins data
-- Let's build a logistic regression, predicting sex based on penguin feature
 
 ## How this will all flow
 
@@ -97,25 +103,13 @@ nipa <- list(red = "#c03018",
 - A little simplified
 - "What questions do you have?"
 
-# Questions to audience
+# Data analysis: penguins
 
-- What problems might come up in this data analysis?
-- What should we do from here?
-- Problems with putting this into a quarto/rmd document
+- [palmerpenguins](https://github.com/allisonhorst/palmerpenguins)
+- Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
+- Let's do something similar, build a logistic regression, predicting sex based on penguin bill dimensions
 
-# Some key tooling to demonstrate
-
-- Functions with fnmate
-- Writing from top down
-- How to load individual targets
-  - Using keyboard shortcuts
-- How to load packages/dependencies
-- How to debug errors in targets
-- Using tflow
-- Using tar_load
-- storing data
-
-# Take homes
+# `begin_demo()`
 
 # Thanks
 -   Will Landau
@@ -140,8 +134,6 @@ nipa <- list(red = "#c03018",
 `r icon_box` [targets](https://books.ropensci.org/targets/)
 
 `r icon_link` [talk link]()
-
-`r icon_twitter` nj_tierney
 
 `r icon_github` njtierney
 
