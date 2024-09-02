@@ -1,0 +1,6 @@
+name|type|parent|branches|progress
+penguins_modelling|stem|penguins_modelling|0|skipped
+penguin_glm|stem|penguin_glm|0|skipped
+penguin_grid|stem|penguin_grid|0|skipped
+penguin_grid_pred|stem|penguin_grid_pred|0|dispatched
+penguin_grid_pred|stem|penguin_grid_pred|0|completed
