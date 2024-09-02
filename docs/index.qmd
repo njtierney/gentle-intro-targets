@@ -79,13 +79,14 @@ nipa <- list(red = "#c03018",
 
 # Motivation
 
--   Data analysis is interactive/messy
--   How to know if it is up-to-date? Better re-run...
--   Months later, how did you do things? Better re-run...
--   Thinking about data analysis deserves inherent structure
--   **You are always collaborating with your future self**
--   {targets} is a way to manage complexity
-    -   It's also a mindset, a philosophy.
+- Data analysis is interactive/messy
+- How to know if it is up-to-date? Better re-run...
+- Months later, how did you do things? Better re-run...
+- Thinking about data analysis deserves inherent structure
+- **You are always collaborating with your future self**
+- {targets} is a way to manage complexity
+  - It's also a mindset, a philosophy.
+
 
 # I have 3 goals
 
@@ -103,9 +104,9 @@ nipa <- list(red = "#c03018",
 
 # Data analysis: penguins
 
--   [palmerpenguins](https://github.com/allisonhorst/palmerpenguins)
--   Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
--   Let's do something similar, build a logistic regression, predicting sex based on penguin bill dimensions
+- [palmerpenguins](https://github.com/allisonhorst/palmerpenguins)
+- Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
+- Let's do something similar, build a logistic regression, predicting sex based on penguin bill dimensions
 
 # `begin_demo()`
 
