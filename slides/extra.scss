@@ -1,0 +1,10 @@
+/*-- scss:defaults --*/
+$custom-col: #f0a800;
+
+$presentation-h1-font-size: 2em;
+
+/*-- scss:rules --*/
+
+.reveal strong {
+  color: $custom-col;
+}

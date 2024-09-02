@@ -1,0 +1,138 @@
+---
+title: "A gentle guide to using the {targets} package for analytic pipelines"
+subtitle: "Newcastle, UK"
+date: "3rd September, 2024"
+author: "Nicholas Tierney"
+institute: The Kids Institute, Australia
+format: 
+  revealjs:
+    theme: [blood, extra.scss]
+    incremental: true
+    slide-number: true
+    show-slide-number: all
+    footer: "njtierney.github.io/gentle-intro-targets/slides"
+editor: visual
+execute: 
+  echo: false
+  warning: false
+  cache: true
+  freeze: true
+---
+
+```{r}
+#| label: library
+#| include: false
+library(tidyverse)
+library(knitr)
+library(colorspace)
+library(naniar)
+library(visdat)
+library(icons)
+```
+
+```{r}
+#| label: source-r-files
+#| echo: false
+#| message: false
+#| output: false
+lapply(list.files(here::here("R"), full.names = TRUE), source)
+```
+
+```{r}
+#| label: helpers
+#| include: false
+
+icons_fa <- icons::fontawesome
+icon_box <- icon_style(icons_fa$solid$`box-open`, fill = "#f0a800")
+icon_link <- icon_style(icons_fa$solid$link, fill = "#f0a800")
+icon_twitter <- icon_style(icons_fa$brands$twitter, fill = "#f0a800")
+icon_github <- icon_style(icons_fa$brands$github, fill = "#f0a800")
+icon_plane <- icon_style(icons_fa$solid$`paper-plane`, fill = "#f0a800")
+
+
+as_table <- function(...) knitr::kable(..., format='html', digits = 3)
+
+theme_set(
+  theme_grey(base_size = 16) +
+  theme(
+    legend.position = "bottom",
+    plot.background = element_rect(fill = "transparent"),
+    legend.background = element_rect(fill = "transparent")
+  )
+)
+
+# **ni**ck's **pa**lette
+nipa <- list(red = "#c03018",
+             orange = "#f0a800",
+             green = "#609048",
+             purple = "#484878",
+             light_purple = "#A3A3BB",
+             light_green = "#AFC7A3",
+             light_orange = "#F7D37F",
+             light_red = "#DF978B",
+             pale_purple = "#ECECF1",
+             pale_green = "#D7E3D1",
+             pale_orange = "#FBE9BF",
+             pale_red = "#EFCBC4")
+
+```
+
+# Intro
+
+# I have three goals
+
+1. Convince you {targets} is **worth** learning
+2. Convince you that you **can** use it
+3. For you to feel **more confident** writing functions
+
+# Questions to audience
+
+- What problems might come up in this data analysis?
+- What should we do from here?
+- Problems with putting this into a quarto/rmd document
+
+# Some key tooling to demonstrate
+
+- Functions with fnmate
+- Writing from top down
+- How to load individual targets
+  - Using keyboard shortcuts
+- How to load packages/dependencies
+- How to debug errors in targets
+- Using tflow
+- Using tar_load
+- storing data
+
+# Take homes
+
+# Thanks
+-   Will Landau
+-   Miles McBain
+-   Nick Golding
+-   Eric Scott
+
+# Resources
+
+-   https://books.ropensci.org/targets/
+-   https://milesmcbain.github.io/ssa_targets_workshop/
+-   https://github.com/MilesMcBain/tflow
+-   https://github.com/MilesMcBain/fnmate
+
+# Colophon
+
+-   Slides made using [quarto](https://github.com/quarto-dev/quarto)
+-   Colours taken + modified from [lorikeet theme from ochRe](https://github.com/ropenscilabs/ochRe) [njtierney/njt-talks](github.com/njtierney/njt-talks) <!-- - Header font is **Josefin Sans** --> <!-- - Body text font is **Montserrat** --> <!-- - Code font is **Fira Mono** --> <!-- - template available:  -->
+
+# Learning more
+
+`r icon_box` [targets](https://books.ropensci.org/targets/)
+
+`r icon_link` [talk link]()
+
+`r icon_twitter` nj_tierney
+
+`r icon_github` njtierney
+
+`r icon_plane` nicholas.tierney\@gmail.com
+
+# **End.**
