@@ -1,0 +1,12 @@
+---
+title: "Explore"
+format: html
+---
+
+```{r}
+library(targets)
+tar_load(c(
+  penguins_modelling,
+  penguins_glm))
+```
+
