@@ -92,6 +92,11 @@ nipa <- list(red = "#c03018",
 2.  Convince you that you **can** use it
 3.  For you to feel **more confident** writing functions
 
+# Audience
+
+1. Who uses R here?
+2. Have you used targets?
+
 ## How this will all flow
 
 - Talk / analysis is on github: [njtierney/gentle-intro-targets](https://github.com/njtierney/gentle-intro-targets)
@@ -99,6 +104,8 @@ nipa <- list(red = "#c03018",
 -   There is no "Here's one I prepared earlier"
     - (Although I have practiced the live coding)
 -   Please ask questions throughout
+   - Ask on Canapii for deeper questions
+   - Also please feel free to yell out and we can transcribe/repeat
 -   Analysis is a little simplified
 -   "What questions do you have?"
 
