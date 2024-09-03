@@ -10,8 +10,7 @@ format:
     incremental: true
     slide-number: true
     show-slide-number: all
-    footer: "njtierney.github.io/gentle-intro-targets/slides"
-editor: visual
+    footer: "njtierney.github.io/gentle-intro-targets/"
 execute: 
   echo: false
   warning: false
@@ -79,65 +78,79 @@ nipa <- list(red = "#c03018",
 
 # Motivation
 
-- Data analysis is interactive/messy
-- How to know if it is up-to-date? Better re-run...
-- Months later, how did you do things? Better re-run...
-- Thinking about data analysis deserves inherent structure
-- **You are always collaborating with your future self**
-- {targets} is a way to manage complexity
-  - It's also a mindset, a philosophy.
-
+-   Data analysis is interactive and messy
+-   How to know if it is up-to-date? **Better re-run...**
+-   Months later, how did you do things? **Better re-run...**
+-   Thinking about data analysis deserves inherent structure
+-   **You are always collaborating with your future self**
+-   `{targets}` is a way to manage complexity
+    -   It's also a mindset, a philosophy.
 
 # I have 3 goals
 
-1.  Convince you {targets} is **worth** learning
+1.  Convince you `{targets}` is **worth** learning
 2.  Convince you that you **can** use it
 3.  For you to feel **more confident** writing functions
 
 ## How this will all flow
 
+- Talk / analysis is on github: [njtierney/gentle-intro-targets](https://github.com/njtierney/gentle-intro-targets)
 -   Live coding (from scratch) a data analysis
 -   There is no "Here's one I prepared earlier"
+    - (Although I have practiced the live coding)
 -   Please ask questions throughout
 -   Analysis is a little simplified
 -   "What questions do you have?"
 
 ## How to follow along
 
-- This was not designed as a follow along exercise
-  - You are welcome to try!
-- You might be best served to observe, take notes, ask questions
-- Please do ask questions
+-   This was not designed as a follow along exercise
+    -   You are welcome to try!
+-   You might be best served to observe, take notes, ask questions
+-   Please do ask questions
 
 # Data analysis: penguins
 
-- [palmerpenguins](https://github.com/allisonhorst/palmerpenguins)
-- Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
-- Let's do something similar, build a logistic regression, predicting sex based on penguin bill dimensions
+-   [palmerpenguins](https://github.com/allisonhorst/palmerpenguins)
+-   Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
+-   Let's do something similar, build a logistic regression, predicting sex based on penguin bill dimensions
 
 # `begin_demo(timer!)`
+
+# Intermission: checking in
+
+- What things could we do to tidy up this data analysis?
+- What should we do from here?
+- What problems might come up in this data analysis?
+-   Demonstrating debugging in targets
+-   Reading/Writing CSV
+-   Saving plots
 
 # `end_demo()`
 
 # Takeaways: functions
 
-- Move into more functional approach for thinking about solving problems
-- functions capture intent
-- functions can plan out intent
-- `{fnmate}` keyboard shortcut for writing functions helps a lot
+-   Write functions to think about solving problems
+- Good functions do the following:
+  -  Manage **complexity**
+  -  Explain and express **ideas**
+  -  Can be **individually reasoned** with
+  -  Take **iteration**
+-   Functions can help plan out intent
+-   `{fnmate}` keyboard shortcut for writing functions helps a lot
 
 # Takeaways: {targets}
 
-- No problem is too small for targets
-- Use `tflow::use_tflow()` to setup a project
-- Use a quarto/rmd as a scratchpad
-- Keyboard shortcuts for load/make targets
+-   No problem is too small for targets
+-   Use `tflow::use_tflow()` to setup a project
+-   Use a quarto/rmd as a scratchpad
+-   Keyboard shortcuts for load/make targets
 
 # Some things I might not have gotten to
 
-- Demonstrating debugging in targets
-- Reading/Writing CSV
-- Saving plots
+-   Demonstrating debugging in targets
+-   Reading/Writing CSV
+-   Saving plots
 
 # Thanks
 
@@ -162,7 +175,7 @@ nipa <- list(red = "#c03018",
 
 `r icon_box` [targets](https://books.ropensci.org/targets/)
 
-`r icon_link` [talk link]()
+`r icon_link` [talk link](njtierney.github.io/gentle-intro-targets/)
 
 `r icon_github` njtierney
 
