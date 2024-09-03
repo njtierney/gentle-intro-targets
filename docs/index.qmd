@@ -96,11 +96,18 @@ nipa <- list(red = "#c03018",
 
 ## How this will all flow
 
--   Live coding a data analysis
+-   Live coding (from scratch) a data analysis
+-   There is no "Here's one I prepared earlier"
 -   Please ask questions throughout
--   A principle: No tricks!
--   A little simplified
+-   Analysis is a little simplified
 -   "What questions do you have?"
+
+## How to follow along
+
+- This was not designed as a follow along exercise
+  - You are welcome to try!
+- You might be best served to observe, take notes, ask questions
+- Please do ask questions
 
 # Data analysis: penguins
 
@@ -108,7 +115,29 @@ nipa <- list(red = "#c03018",
 - Sexual dimorphism in penguins: [Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090081#s2)
 - Let's do something similar, build a logistic regression, predicting sex based on penguin bill dimensions
 
-# `begin_demo()`
+# `begin_demo(timer!)`
+
+# `end_demo()`
+
+# Takeaways: functions
+
+- Move into more functional approach for thinking about solving problems
+- functions capture intent
+- functions can plan out intent
+- `{fnmate}` keyboard shortcut for writing functions helps a lot
+
+# Takeaways: {targets}
+
+- No problem is too small for targets
+- Use `tflow::use_tflow()` to setup a project
+- Use a quarto/rmd as a scratchpad
+- Keyboard shortcuts for load/make targets
+
+# Some things I might not have gotten to
+
+- Demonstrating debugging in targets
+- Reading/Writing CSV
+- Saving plots
 
 # Thanks
 
@@ -119,10 +148,10 @@ nipa <- list(red = "#c03018",
 
 # Resources
 
--   https://books.ropensci.org/targets/
--   https://milesmcbain.github.io/ssa_targets_workshop/
--   https://github.com/MilesMcBain/tflow
--   https://github.com/MilesMcBain/fnmate
+-   <https://books.ropensci.org/targets/>
+-   <https://milesmcbain.github.io/ssa_targets_workshop/>
+-   <https://github.com/MilesMcBain/tflow>
+-   <https://github.com/MilesMcBain/fnmate>
 
 # Colophon
 
