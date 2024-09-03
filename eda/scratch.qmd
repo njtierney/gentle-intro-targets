@@ -1,0 +1,43 @@
+---
+title: "scratch"
+format: html
+---
+
+```{r}
+library(targets)
+tar_load(
+  c(
+    penguins_modelling,
+    penguins_glm,
+    augmented_penguins,
+    penguins_prediction_grid
+  )
+)
+```
+
+# Explore models
+
+```{r}
+ggplot(augmented_penguins,
+       aes(x = bill_length_mm,
+           y = .fitted)) + 
+  geom_point()
+
+ggplot(augmented_penguins,
+       aes(x = bill_length_mm,
+           y = bill_depth_mm,
+           colour = .fitted)) + 
+  geom_point()
+```
+
+Can we make this a grid?...
+
+```{r}
+ggplot(penguins_prediction_grid,
+       aes(x = bill_depth_mm,
+           y = bill_length_mm,
+           fill = .fitted)) + 
+  geom_tile() + 
+  scale_fill_continuous_sequential()
+```
+
