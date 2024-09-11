@@ -5,17 +5,22 @@ library(colorspace)
 library(broom)
 library(targets)
 library(tarchetypes)
+library(crew)
 
 tar_source()
 
 tar_option_set(
-  workspace_on_error = TRUE
+  workspace_on_error = TRUE,
+  controller = crew_controller_local()
+
 )
 
 list(
 
   tar_file(new_penguins,
            "data/penguins-modelling.csv"),
+
+  ?tar_files()
 
   tar_target(some_penguins, read_csv(new_penguins)),
 
